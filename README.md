@@ -4,7 +4,7 @@ Webpack3 boilerplate with Babel, SCSS, lodash.
 
 ##  EZ Setup
 1. `git clone git@github.com:fromtexas/webpack3-boilerplate.git`
-2. `cd Webpack3-boilerplate`
+2. `cd webpack3-boilerplate`
 3. `npm install`
 
 ## Development
