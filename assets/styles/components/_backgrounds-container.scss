@@ -1,0 +1,31 @@
+
+.background-container{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+
+
+	&__left{
+		position: relative;
+		flex: 0 0 55%;
+		background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/background-1.png');
+		&::after{
+			content: '';
+			position: absolute;
+			height: 4rem;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			background-color: $color-white;
+		}
+	}
+
+	&__right{
+		flex: 0 0 45%;
+		background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/background-2.png');
+	}
+}

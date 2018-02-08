@@ -1,0 +1,25 @@
+.menu{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'proximaB';
+    color: $color-grey-1;
+    font-size: 2rem;
+    cursor: pointer;
+    
+    &__bars-container{
+        margin-right: 2rem;
+    }
+
+    &__bar{
+        background-color: $color-wood;
+        width: 4.5rem;
+        height: 2px;
+        display: block;
+
+        &:not(:last-child){
+            margin-bottom: 1.3rem;
+        }
+    }
+  
+}

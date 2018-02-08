@@ -1,0 +1,16 @@
+.btn-inline{
+	color: $color-white;
+	font-size: 2rem;
+	font-family: 'proximaB';
+	border: 2px solid $color-white;
+	background-color: transparent;
+	padding: 2rem 10rem;
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	cursor: pointer;
+
+	&:focus{
+		outline: none;
+	}
+	
+}

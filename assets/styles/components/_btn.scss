@@ -1,0 +1,26 @@
+.btn{
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-size: 1.6rem;
+    font-family: 'proximaB';
+    position: relative;
+
+    &:focus{
+        outline: none;
+    }
+    &:active{
+        transform: translateY(2px);
+    }
+
+    &::before{
+        position: absolute;
+        content: '';
+        width: 5rem;
+        height: 2px;
+        background-color: $color-wood;
+        left: 0;
+        bottom: -5px;
+    }
+}

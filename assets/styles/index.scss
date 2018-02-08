@@ -1,5 +1,23 @@
-@import './_var/variables.scss';
 
-body{
-  color: $gray;
-}
+@import './abstracts/variables';
+
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+
+@import './components/topbar';
+@import './components/logo';
+@import './components/navigation';
+@import './components/menu';
+@import './components/info-box';
+@import './components/backgrounds-container';
+@import './components/btn-inline';
+@import './components/btn';
+@import './components/furniture';
+@import './components/decor';
+@import './components/quality';
+
+
+@import './layout/header';
+
+@import './vendor/styles';

@@ -1,0 +1,54 @@
+.header{
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+
+    &__text-box{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 10;
+		transform: translate(-50%, -50%);
+    }
+
+    &__title{
+    	font-size: 15rem;
+    	color: $color-wood;
+    	font-family: 'proximaB';
+    	text-transform: uppercase;
+		letter-spacing: .7rem;
+	}
+	
+	&__pointer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 3rem;
+		position: relative;
+		top: 8rem;
+		
+		span{
+			color: rgba($color-white, .7);
+			font-size: 5rem;
+		}
+	}
+
+	&__share{
+		font-size: 3rem;
+		color: $color-wood;
+		position: absolute;
+		bottom: 1rem;
+		right: 2rem;
+		cursor: pointer;
+	}
+
+	&__vertical-line{
+		display: block;
+		width: 4px;
+		height: 5rem;
+		background-color: $color-wood;
+		position: absolute;
+		bottom: -2.5rem;
+		right: 21%;
+	}
+}

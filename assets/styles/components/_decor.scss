@@ -1,0 +1,63 @@
+.decor{
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    position: relative;
+    padding-bottom: 10rem;
+
+    &__text{
+        flex: 1;
+        display: flex;
+        justify-content: flex-start; //dif
+        align-items: center;
+        position: relative;
+        text-align: right; //dif
+    }
+
+    &__letter{
+        position: absolute;
+        color: rgba(190, 166, 124, 0.1);
+        font-size: 40rem;
+        font-family: 'proximaB';
+        top: -49.5rem; //dif
+        right: -26rem; //dif
+    }
+
+    &__word{
+        position: absolute;
+        color: rgba(190, 166, 124, 0.1);
+        font-size: 20rem;
+        font-family: 'proximaB';
+        top: 50%;
+        left: 0; //dif
+        transform: translateY(-50%);
+        text-transform: uppercase;
+    }
+
+    &__wrap{
+        max-width: 35rem;
+        margin-right: 1rem;
+        position: relative;
+    }
+
+    &__picture-container{
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+        padding: 2rem;
+    }
+
+    &__picture{
+        margin-left: auto; //dif
+        position: relative;
+        max-width: 65rem;
+        height: 45rem;
+        background-image: url('../img/decor.png');
+        background-position-x: right;
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-size: cover;
+        box-shadow: 0rem 0rem 2rem 1px rgba(0, 0, 0, 0.2);
+    }
+}
+

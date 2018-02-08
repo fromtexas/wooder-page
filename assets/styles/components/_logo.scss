@@ -1,0 +1,19 @@
+.logo{
+    position: relative;
+    font-family: 'proximaB';
+    font-size: 5rem;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: .7rem;
+
+    &::after{
+        content: '';
+        position: absolute;
+        height: .8rem;
+        width: 8.1rem;
+        background-color: $color-wood;
+        top: 50%;
+        left: 0;
+        transform: translate(65%,-50%);
+    }
+}

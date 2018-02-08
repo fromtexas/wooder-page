@@ -1,0 +1,37 @@
+.info-box{
+    display: flex;
+    align-items: center;
+
+    &__icon{
+        font-size: 2.5rem;
+        margin-right: 5rem;
+        span{
+            display: flex;
+        }
+    }
+
+    > *{
+        text-decoration: none;
+        color: $color-grey-1;
+        
+    }
+
+    &__language,
+    &__language:link,
+    &__language:visited{
+        font-family: 'proximaB';
+        font-size: 2rem;
+
+        &::after{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: .8rem;
+            vertical-align: middle;
+            content: "";
+            border-top: .7rem solid $color-wood;
+            border-right: .5rem solid transparent;
+            border-left: .5rem solid transparent;
+        }
+    }
+}
