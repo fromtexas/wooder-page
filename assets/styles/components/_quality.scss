@@ -38,6 +38,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        cursor: pointer;
     }
 
     &__video-image{
@@ -56,5 +57,15 @@
             object-fit: cover;
             display: block;
         }
+    }
+
+    &__play-icon{
+        width: 4rem;
+        height: 4rem;
+        fill: $color-white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

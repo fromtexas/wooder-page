@@ -1,0 +1,54 @@
+.design{
+    height: 95vh;
+    position: relative;
+    background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/design.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15rem;
+    display: flex;
+    margin-top: 20rem;
+
+    &__box{
+        flex: 1;
+        border: 1px solid $color-wood;
+        position: relative;
+    }
+
+    &__wrap{
+        width: 60rem;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30%;
+        position: absolute;
+    }
+
+    &__play-icon{
+        fill: $color-white;
+        width: 3rem;
+        height: 3rem;
+        align-self: center;
+        vertical-align: middle;
+    }
+
+    &__image{
+        position: absolute;
+        right: 5%;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__btn{
+        margin-top: 3rem;
+    }
+
+    &__letter{
+        position: absolute;
+        color: rgba(190, 166, 124, 0.1);
+        font-size: 40rem;
+        font-family: 'proximaB';
+        top: -29.5rem;
+        right: 10%;
+        z-index: -1;
+    }
+}

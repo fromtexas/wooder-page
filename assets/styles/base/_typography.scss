@@ -157,6 +157,10 @@ body{
 		left: -25rem;
 	}
 
+	&__line-left-white{
+		background-color: $color-white;
+	}
+
 	&__line-right{
 		position: absolute;
 		display: block;
@@ -166,6 +170,12 @@ body{
 		top: 50%;
 		transform: translateY(-50%);
 		right: -25rem;
+	}
+
+	&-wood{
+		color: $color-wood;
+		line-height: 1.2;
+		margin-bottom: 4rem;
 	}
 }
 
@@ -202,6 +212,10 @@ body{
 		left: 50%;
 		transform: translateX(-50%);
 		top: -1rem;
+	}
+
+	&-white{
+		color: $color-white;
 	}
 }
 
@@ -245,5 +259,32 @@ body{
 			bottom: -10rem;
 		}
 	}
+}
+
+.vertical-line{
+	width: 2px;
+	height: 13rem;
+	position: absolute;
+
+	&-white{
+		background-color: rgba($color-white, .5);
+		top: 50%;
+		transform: translateY(-50%);
+		right: 20%;
+	}
+}
+
+.copyright{
+	color: rgba($color-grey-1, .5);
+	font-size: 1.4rem;
+}
+
+.designed{
+	color: $color-grey-1;
+	font-size: 1.4rem;
+}
+
+.darker{
+	color: rgba($color-grey-1, .5);
 }
 
