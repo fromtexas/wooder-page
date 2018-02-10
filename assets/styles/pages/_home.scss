@@ -1,0 +1,51 @@
+.furniture{
+    @include section-styles;
+    
+
+    &__letter{
+        @include transparent-letter;
+        top: -60rem;
+        left: -28rem;
+    }
+
+    &__word{
+        @include transparent-word;
+        left: 30%;
+    }
+
+}
+
+.decor{
+    @include section-styles;
+
+    &__letter{
+        @include transparent-letter;
+        top: -49.5rem;
+        right: -26rem;
+    }
+
+    &__word{
+        @include transparent-word;
+        left: 0;
+    }
+}
+
+.about{
+    @include section-styles;
+
+    &__letter{
+        @include transparent-letter;
+        top: -49.5rem;
+        right: -26rem;
+    }
+
+    &__word{
+        @include transparent-word;
+        left: 0;
+    }
+
+    .description-box__wrap{
+        margin-left: 10rem;
+    }
+}
+

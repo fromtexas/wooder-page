@@ -1,0 +1,24 @@
+@mixin transparent-letter {
+    position: absolute;
+    color: rgba($color-wood, .1);
+    font-size: 40rem;
+    font-family: 'proximaB';
+}
+
+@mixin section-styles {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+@mixin transparent-word{
+    position: absolute;
+    color: rgba($color-wood, .1);
+    font-size: 20rem;
+    font-family: 'proximaB';
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}

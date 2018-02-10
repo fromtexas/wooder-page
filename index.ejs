@@ -74,8 +74,9 @@
   <main>
         
     <section class="furniture">
-      <div class="furniture__text">
-        <div class="furniture__wrap">
+
+      <div class="description-box description-box-left">
+        <div class="description-box__wrap">
             <span class="furniture__letter">F</span>
             <h3 class="title">
               <span class="title__line-left"></span>
@@ -91,24 +92,23 @@
             </span>
         </div> 
       </div>
-      
-      <div class="furniture__picture-container">
-        <div class="furniture__picture">
-        </div>
-        <span class="furniture__word">Furniture</span>
-      </div>
 
+      <figure class="picture-box">
+        <img src="./assets/img/furniture-pic-1.png" alt="furniture" class="picture-box__picture picture-box__picture-right">
+        <figcaption class="furniture__word">Furniture</figcaption>
+      </figure>
+      
     </section>
 
     <section class="decor">
-      <div class="decor__picture-container">
-        <div class="decor__picture">
-        </div>
-        <span class="decor__word">Decor</span>
-      </div>
 
-      <div class="decor__text">
-        <div class="decor__wrap">
+      <figure class="picture-box">
+        <img src="./assets/img/decor.png" alt="decor" class="picture-box__picture picture-box__picture-left">
+        <figcaption class="decor__word">Decor</figcaption>
+      </figure>
+
+      <div class="description-box description-box-right right">
+        <div class="description-box__wrap">
           <span class="decor__letter">D</span>
           <h3 class="title">
             <span class="title__line-right"></span>
@@ -139,30 +139,42 @@
       
       <div class="quality__video-container">
         <div class="quality__video-image">
-          <img src="./assets/img/video-img-1.png" alt="img-1">
-          <span class="quality__video-button">
-              <svg class="quality__play-icon">
-                <use xlink:href="./assets/img/symbol-defs.svg#icon-play3"/>
-              </svg>
-          </span>
+          
+          <div class="quality__video-wrap">
+            <img src="./assets/img/video-img-1.png" alt="img-1">
+            <span class="quality__video-button">
+                <svg class="quality__play-icon">
+                  <use xlink:href="./assets/img/symbol-defs.svg#icon-play3"/>
+                </svg>
+            </span>
+          </div>
+          
           <span class="quality__video-name">Innovative Design</span>
         </div>
         <div class="quality__video-image">
-          <img src="./assets/img/video-img-2.png" alt="img-2">
-          <span class="quality__video-button">
-            <svg class="quality__play-icon">
-              <use xlink:href="./assets/img/symbol-defs.svg#icon-play3"/>
-            </svg>
-          </span>
+
+          <div class="quality__video-wrap">
+            <img src="./assets/img/video-img-2.png" alt="img-2">
+            <span class="quality__video-button">
+              <svg class="quality__play-icon">
+                <use xlink:href="./assets/img/symbol-defs.svg#icon-play3"/>
+              </svg>
+            </span>
+          </div>
+
           <span class="quality__video-name">Hight-level Skills</span>
         </div>
         <div class="quality__video-image">
-          <img src="./assets/img/video-img-3.png" alt="img-3">
-          <span class="quality__video-button">
-            <svg class="quality__play-icon">
-              <use xlink:href="./assets/img/symbol-defs.svg#icon-play3"/>
-            </svg>
-          </span>
+          
+          <div class="quality__video-wrap">
+            <img src="./assets/img/video-img-3.png" alt="img-3">
+            <span class="quality__video-button">
+              <svg class="quality__play-icon">
+                <use xlink:href="./assets/img/symbol-defs.svg#icon-play3"/>
+              </svg>
+            </span>
+          </div>
+
           <span class="quality__video-name">Quality Products</span>
         </div>
       </div>
@@ -198,26 +210,27 @@
     </section>
 
     <section class="about">
-        <div class="about__picture-container">
-          <div class="about__picture">
-          </div>
-          <span class="about__word">About</span>
-        </div>
 
-        <div class="about__text">
-          <div class="about__wrap">
-              <span class="about__letter">A</span>
-              <h3 class="title">
-                <span class="title__line-left"></span>
-                about
-              </h3>
-              <p class="description">
-                  <span class="description__line-left"></span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis voluptatibus earum eum perferendis quas ab accusantium fuga illo at. Ipsa dicta neque perferendis, laborum ipsam fuga quibusdam sequi possimus?
-              </p>
-              <button class="btn">Learn more <span class="right-arrow"></span></button>
-          </div> 
-        </div>
+      <figure class="picture-box">
+        <img src="./assets/img/about.png" alt="decor" class="picture-box__picture picture-box__picture-left">
+        <figcaption class="about__word">About</figcaption>
+      </figure>
+
+      <div class="description-box description-box-right">
+        <div class="description-box__wrap">
+            <span class="about__letter">A</span>
+            <h3 class="title">
+              <span class="title__line-left"></span>
+              about
+            </h3>
+            <p class="description">
+                <span class="description__line-left"></span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis voluptatibus earum eum perferendis quas ab accusantium fuga illo at. Ipsa dicta neque perferendis, laborum ipsam fuga quibusdam sequi possimus?
+            </p>
+            <button class="btn">Learn more <span class="right-arrow"></span></button>
+        </div> 
+      </div>
+
     </section>
 
     <footer class="footer">

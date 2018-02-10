@@ -1,0 +1,26 @@
+.picture-box{
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+
+    &__picture{
+        display: block;
+        max-width: 65rem;
+        height: 45rem;
+        object-fit: cover;
+        box-shadow: 0rem 0rem 2rem 1px rgba(0, 0, 0, 0.2);
+        transition: all .3s;
+        &:hover{
+            transform: translateY(-.5rem);
+        }
+
+        &-left{
+            margin-left: auto;
+        }
+
+        &-right{
+            margin-right: auto;
+        }
+    }
+}
