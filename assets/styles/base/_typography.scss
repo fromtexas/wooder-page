@@ -107,7 +107,11 @@ body{
     position: absolute;
     top: 50%;
     left: 10%;
-    transform: translateY(-50%);
+	transform: translateY(-50%);
+	
+	@include respond(phone){
+		display: none;
+	}
 
 	&__numbers{
 		position: relative;
@@ -155,6 +159,20 @@ body{
 		top: 50%;
 		transform: translateY(-50%);
 		left: -25rem;
+
+		@include respond(tab-land){
+			width: 10rem;
+			left: -15rem;
+		}
+		
+		@include respond(tab-port){
+			width: 10rem;
+			left: -15rem;
+		}
+
+		@include respond(phone){
+            display: none;
+        }
 	}
 
 	&__line-left-white{
@@ -170,6 +188,20 @@ body{
 		top: 50%;
 		transform: translateY(-50%);
 		right: -25rem;
+
+		@include respond(tab-land){
+			width: 10rem;
+			right: -15rem;
+		}
+		
+		@include respond(tab-port){
+			width: 10rem;
+			right: -15rem;
+		}
+
+		@include respond(phone){
+            display: none;
+        }
 	}
 
 	&-wood{
@@ -193,6 +225,10 @@ body{
 		background-color: $color-wood;
 		left: -10rem;
 		top: 1rem;
+
+		@include respond(phone){
+            display: none;
+        }
 	}
 
 	&__line-right{
@@ -202,6 +238,10 @@ body{
 		background-color: $color-wood;
 		right: -10rem;
 		top: 1rem;
+
+		@include respond(phone){
+            display: none;
+        }
 	}
 
 	&__line-top{
@@ -224,6 +264,18 @@ body{
 	bottom: 0;
 	font-size: 4.5rem;
 	font-family: 'proximaB';
+
+	@include respond(tab-land){
+		bottom: -12rem;
+	}
+	
+	@include respond(tab-port){
+		bottom: -12rem;
+	}
+
+	@include respond(phone){
+		display: none;
+	}
 
 	&::before{
 		content: '';
@@ -251,6 +303,14 @@ body{
 		&::before{
 			bottom: -20rem;
 		}
+
+		@include respond(tab-land){
+			left: 0;
+        }
+
+        @include respond(tab-port){
+			left: 0;
+        }
 	}
 
 	&-right{
@@ -258,6 +318,14 @@ body{
 		&::before{
 			bottom: -10rem;
 		}
+
+		@include respond(tab-land){
+            right: 0;
+        }
+
+        @include respond(tab-port){
+            right: 0;
+        }
 	}
 }
 
@@ -271,6 +339,10 @@ body{
 		top: 50%;
 		transform: translateY(-50%);
 		right: 20%;
+
+		@include respond(phone){
+			display: none;
+		}
 	}
 }
 

@@ -8,10 +8,15 @@
     display: flex;
     margin-top: 20rem;
 
+    @include respond(phone){
+        padding: 2rem;
+    }
+
     &__box{
         flex: 1;
         border: 1px solid $color-wood;
         position: relative;
+        z-index: 10;
     }
 
     &__wrap{
@@ -20,6 +25,13 @@
         transform: translateY(-50%);
         left: 30%;
         position: absolute;
+
+        @include respond(phone){
+            width: 100%;
+            position: relative;
+            left: 0;
+            padding: 1rem;
+        }
     }
 
     &__play-icon{

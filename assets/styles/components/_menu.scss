@@ -6,6 +6,20 @@
     color: $color-grey-1;
     font-size: 2rem;
 
+    &__letter{
+        @include transparent-letter;
+        visibility: hidden;
+        transition: all .3s;
+        opacity: 0;
+    }
+
+    &__word{
+        @include transparent-word;
+        visibility: hidden;
+        transition: all .3s;
+        opacity: 0;
+    }
+
     &__link, 
     &__link:link, 
     &__link:visited {
@@ -16,7 +30,7 @@
         color: $color-white;
         font-size: 4rem;
         letter-spacing: .3rem;
-
+        z-index: 100;
         &::before{
             content: '';
             position: absolute;
@@ -46,12 +60,16 @@
 
     &__item{
         opacity: 0;
+        visibility: hidden;
     }
 
     &__background{
+        background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)),  url('../img/menu-background.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         position: absolute;
         width: 0vw;
-        background-color: rgba($color-font-primary, .99);
         height: 100vh;
         top: -3rem;
         left: -3rem;
@@ -92,22 +110,35 @@
         box-shadow: 0rem 0rem 0 3px $color-font-primary;
     }
 
+    &__checkbox:checked ~ &__background &__letter{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__checkbox:checked ~ &__background &__wrap &__word{
+        opacity: 1;
+        visibility: visible;
+    }
+
     &__checkbox:checked ~ &__background &__wrap &__item:nth-child(1){
         animation: moveInLeft .5s ease-out .55s;
         animation-fill-mode: backwards;
         opacity: 1;
+        visibility: visible;
     }
 
     &__checkbox:checked ~ &__background &__wrap &__item:nth-child(2){
         animation: moveInRight .5s ease-out .55s;
         animation-fill-mode: backwards;
         opacity: 1;
+        visibility: visible;
     }
 
     &__checkbox:checked ~ &__background &__wrap &__item:nth-child(3){
         animation: moveInLeft .5s ease-out .55s;
         animation-fill-mode: backwards;
         opacity: 1;
+        visibility: visible;
     }
 
 

@@ -1,14 +1,21 @@
 .btn{
-    background-color: transparent;
-    border: none;
-    text-transform: uppercase;
-    letter-spacing: .5rem;
-    font-size: 1.6rem;
-    font-family: 'proximaB';
-    position: relative;
-    transition: all .3s;
-    padding: .3rem;
-    cursor: pointer;
+    &:visited,
+    &:link{
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        font-size: 1.6rem;
+        font-family: 'proximaB';
+        position: relative;
+        transition: all .3s;
+        padding: .3rem;
+        cursor: pointer;
+        color: $color-font-primary;
+        display: inline-block;
+    }
+    
 
     &:focus{
         outline: none;

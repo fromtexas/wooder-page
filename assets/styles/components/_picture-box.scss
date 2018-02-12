@@ -11,6 +11,11 @@
         object-fit: cover;
         box-shadow: 0rem 0rem 2rem 1px rgba(0, 0, 0, 0.2);
         transition: all .3s;
+
+        @include respond(phone){
+            width: 100%;
+        }
+
         &:hover{
             transform: translateY(-.5rem);
         }

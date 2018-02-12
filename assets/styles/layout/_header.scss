@@ -17,6 +17,10 @@
     	font-family: 'proximaB';
     	text-transform: uppercase;
 		letter-spacing: .7rem;
+
+		@include respond(phone){
+            font-size: 10rem;
+        }
 	}
 	
 	&__pointer{

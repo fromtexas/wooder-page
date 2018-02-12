@@ -2,13 +2,30 @@
     display: flex;
     align-items: center;
 
+    @include respond(phone){
+        visibility: hidden;
+        margin-top: 9rem;
+    }
+
     &__list{
         list-style: none;
         display: flex;
+
+        @include respond(phone){
+            display: none;
+        }
     }
 
     &__item{
         padding: 3rem 7rem;
+
+        @include respond(tab-land){
+            padding: 3rem 5rem;
+        }
+        
+        @include respond(tab-port){
+            padding: 3rem 5rem;
+        }
     }
 
     &__link, 
@@ -19,5 +36,10 @@
         text-transform: uppercase;
         font-family: 'proximaB';
         color: $color-grey-1;
+        transition: all .2s;
+
+        &:hover{
+            color: $color-wood;
+        }
     }
 }

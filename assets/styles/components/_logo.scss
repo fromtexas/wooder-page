@@ -6,6 +6,10 @@
     text-transform: uppercase;
     letter-spacing: .7rem;
 
+    @include respond(phone){
+        display: none;
+	}
+
     &::after{
         content: '';
         position: absolute;

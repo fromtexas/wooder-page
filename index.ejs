@@ -17,10 +17,12 @@
                   <span class="menu__bar">&nbsp;</span>
               </label>
               <div class="menu__background">
+                <span class="menu__letter">M</span>
                 <ul class="menu__wrap">
                   <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Product</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#furniture">Product</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+                  <span class="menu__word">Menu</span>
                 </ul>
               </div>
           </div>
@@ -37,10 +39,10 @@
               <a href="#" class="navigation__link">Home</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Products</a>
+              <a href="#furniture" class="navigation__link">Products</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">About</a>
+              <a href="#about" class="navigation__link">About</a>
             </li>
           </ul>
         </nav>
@@ -85,7 +87,7 @@
 
   <main>
         
-    <section class="furniture">
+    <section id="furniture" class="furniture">
 
       <div class="description-box description-box-left">
         <div class="description-box__wrap">
@@ -98,7 +100,7 @@
                 <span class="description__line-left"></span>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis voluptatibus earum eum perferendis quas ab accusantium fuga illo at. Ipsa dicta neque perferendis, laborum ipsam fuga quibusdam sequi possimus?
             </p>
-            <button class="btn">Learn more <span class="right-arrow"></span></button>
+            <a href="#popup-1" class="btn">Learn more <span class="right-arrow"></span></a>
             <span class="number number-left">
               01
             </span>
@@ -112,7 +114,7 @@
       
     </section>
 
-    <section class="decor">
+    <section id="decor" class="decor">
 
       <figure class="picture-box">
         <img src="./assets/img/decor.png" alt="decor" class="picture-box__picture picture-box__picture-left">
@@ -130,7 +132,7 @@
               <span class="description__line-right"></span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis voluptatibus earum eum perferendis quas ab accusantium fuga illo at. Ipsa dicta neque perferendis, laborum ipsam fuga quibusdam sequi possimus?
           </p>
-          <button class="btn">Learn more <span class="right-arrow"></span></button>
+          <a href="#popup-2" class="btn">Learn more <span class="right-arrow"></span></a>
           <span class="number number-right">
             02
           </span>
@@ -221,7 +223,7 @@
       <img src="./assets/img/play-big.png" alt="img" class="design__image">
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
 
       <figure class="picture-box">
         <img src="./assets/img/about.png" alt="decor" class="picture-box__picture picture-box__picture-left">
@@ -239,7 +241,7 @@
                 <span class="description__line-left"></span>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veritatis voluptatibus earum eum perferendis quas ab accusantium fuga illo at. Ipsa dicta neque perferendis, laborum ipsam fuga quibusdam sequi possimus?
             </p>
-            <button class="btn">Learn more <span class="right-arrow"></span></button>
+            <a href="#popup-3" class="btn">Learn more <span class="right-arrow"></span></a>
         </div> 
       </div>
 
@@ -251,6 +253,45 @@
       <span class="designed"><span class="darker">Designed</span> by Vacheslav Olianishyn</span>
       <span class="designed"><span class="darker">Developed</span> by Oleg Veskelen</span>
     </footer>
+
+    <div id="popup-1" class="popup">
+      <div class="popup__content center">
+        <span class="popup__letter">F</span>
+        <a href="#furniture" class="popup__close">&times;</a>
+        <h3 class="title">
+          Furniture
+        </h3>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus cumque neque eius asperiores praesentium consequatur commodi
+        </p>
+      </div>
+    </div>
+
+    <div id="popup-2" class="popup">
+      <div class="popup__content center">
+        <span class="popup__letter">D</span>
+        <a href="#decor" class="popup__close">&times;</a>
+        <h3 class="title">
+          Decor
+        </h3>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus cumque neque eius asperiores praesentium consequatur commodi
+        </p>
+      </div>
+    </div>
+
+    <div id="popup-3" class="popup">
+      <div class="popup__content center">
+        <span class="popup__letter">A</span>
+        <a href="#about" class="popup__close">&times;</a>
+        <h3 class="title">
+          About
+        </h3>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus cumque neque eius asperiores praesentium consequatur commodi
+        </p>
+      </div>
+    </div>
   </main>
   
 </body>

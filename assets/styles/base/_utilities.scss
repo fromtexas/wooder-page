@@ -4,6 +4,10 @@
 
 .right{
     text-align: right;
+    
+    @include respond(phone){
+        text-align: inherit;
+    }
 }
 
 .left{

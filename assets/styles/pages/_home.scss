@@ -6,6 +6,14 @@
         @include transparent-letter;
         top: -60rem;
         left: -28rem;
+
+        @include respond(tab-land){
+            left: 0;
+        }
+
+        @include respond(tab-port){
+            left: 0;
+        }
     }
 
     &__word{
@@ -22,6 +30,14 @@
         @include transparent-letter;
         top: -49.5rem;
         right: -26rem;
+
+        @include respond(tab-land){
+            right: 0;
+        }
+
+        @include respond(tab-port){
+            right: 0;
+        }
     }
 
     &__word{
@@ -37,6 +53,14 @@
         @include transparent-letter;
         top: -49.5rem;
         right: -26rem;
+
+        @include respond(tab-land){
+            right: 0;
+        }
+        
+        @include respond(tab-port){
+            right: 0;
+        }
     }
 
     &__word{
@@ -46,6 +70,10 @@
 
     .description-box__wrap{
         margin-left: 10rem;
+
+        @include respond(phone){
+            margin-left: 0;
+        }
     }
 }
 
