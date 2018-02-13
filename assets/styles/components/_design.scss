@@ -8,9 +8,7 @@
     display: flex;
     margin-top: 20rem;
 
-    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
-    only screen and (-webkit-min-device-pixel-ration: 2) and (min-width: 37.5em),
-    only screen and (min-width: 125em) {
+    @include resolution{
         background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/design.png');
     }
 
