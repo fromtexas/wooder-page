@@ -8,6 +8,12 @@
         max-width: 35rem;
         margin-right: 1rem;
         position: relative;
+
+        @include respond(phone){
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 5rem;
+        }
     }
 
     &-left{

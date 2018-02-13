@@ -13,6 +13,11 @@
             flex-direction: column;
             align-items: center;
         }
+
+        @include respond(tab-port-narrow){
+			flex-direction: column;
+            align-items: center;
+		}
     }
 
     &__video-name{
@@ -64,6 +69,13 @@
         position: relative;
 
         @include respond(phone){
+            margin-right: 0;
+            &:not(:last-child){ 
+                margin-bottom: 8rem;
+            }
+        }
+
+        @include respond(tab-port-narrow){
             margin-right: 0;
             &:not(:last-child){ 
                 margin-bottom: 8rem;

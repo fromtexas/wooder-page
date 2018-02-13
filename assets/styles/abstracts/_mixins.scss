@@ -13,10 +13,11 @@
     padding-bottom: 10rem;
 
     @include respond(phone){
+        margin-top: 5rem;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-bottom: 0;
+        padding-bottom: 5rem;
     }
 }
 
@@ -39,6 +40,10 @@
 @mixin respond($breakpoint){
     @if $breakpoint == phone {
         @media only screen and (max-width: 37.5em){@content}; //600px
+    }
+
+    @if $breakpoint == tab-port-narrow {
+        @media only screen and (max-width: 50em){@content}; //800px
     }
 
     @if $breakpoint == tab-port {

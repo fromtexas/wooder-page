@@ -22,10 +22,11 @@
         @include respond(tab-land){
             padding: 3rem 5rem;
         }
-        
+
         @include respond(tab-port){
             padding: 3rem 5rem;
         }
+           
     }
 
     &__link, 

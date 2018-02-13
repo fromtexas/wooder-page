@@ -17,5 +17,9 @@
 	&:hover{
 		letter-spacing: 1rem;
 	}
+
+	@include respond(phone){
+		padding: 2rem 5rem;
+	}
 	
 }

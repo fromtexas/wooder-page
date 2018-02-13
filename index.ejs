@@ -108,7 +108,10 @@
       </div>
 
       <figure class="picture-box">
-        <img src="./assets/img/furniture-pic-1.png" alt="furniture" class="picture-box__picture picture-box__picture-right">
+          <picture>
+            <source srcset="./assets/img/furniture-pic-1-small.png" media="(max-width: 56.25em)">
+            <img src="./assets/img/furniture-pic-1.png" alt="furniture" class="picture-box__picture picture-box__picture-right">
+          </picture>
         <figcaption class="furniture__word">Furniture</figcaption>
       </figure>
       
@@ -116,7 +119,7 @@
 
     <section id="decor" class="decor">
 
-      <figure class="picture-box">
+      <figure class="picture-box">  
         <img src="./assets/img/decor.png" alt="decor" class="picture-box__picture picture-box__picture-left">
         <figcaption class="decor__word">Decor</figcaption>
       </figure>
@@ -155,7 +158,14 @@
         <div class="quality__video-image">
           
           <div class="quality__video-wrap">
-            <img src="./assets/img/video-img-1.png" alt="img-1">
+            <picture>
+              <source srcset="./assets/img/video-img-1-small.png" media="(max-width: 56.25em)">
+              <img 
+                srcset="./assets/img/video-img-1-small.png 1x, ./assets/img/video-img-1.png 2x" 
+                alt="img-1" 
+                src="./assets/img/video-img-1.png"
+              >
+            </picture>
             <span class="quality__video-button">
                 <svg class="quality__play-icon">
                   <use xlink:href="./assets/img/symbol-defs.svg#icon-play3"/>
@@ -226,7 +236,15 @@
     <section id="about" class="about">
 
       <figure class="picture-box">
-        <img src="./assets/img/about.png" alt="decor" class="picture-box__picture picture-box__picture-left">
+          <picture>
+            <source srcset="./assets/img/about-small.png" media="(max-width: 56.25em)">
+            <img 
+              srcset="./assets/img/about-small.png 1x, ./assets/img/about.png 2x" 
+              alt="about" 
+              class="picture-box__picture picture-box__picture-left"
+              src="./assets/img/about.png"
+            >
+          </picture>
         <figcaption class="about__word">About</figcaption>
       </figure>
 

@@ -12,7 +12,7 @@
 	&__left{
 		position: relative;
 		flex: 0 0 55%;
-		background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/background-1.png');
+		background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/background-1-small.png');
 		background-size: cover;
 		background-repeat: no-repeat;
 		&::after{
@@ -24,12 +24,24 @@
 			left: 0;
 			background-color: $color-white;
 		}
+
+		@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
+		only screen and (-webkit-min-device-pixel-ration: 2) and (min-width: 37.5em),
+		only screen and (min-width: 125em) {
+			background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/background-1.png');
+		}
 	}
 
 	&__right{
 		flex: 0 0 45%;
-		background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/background-2.png');
+		background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/background-2-small.png');
 		background-size: cover;
 		background-repeat: no-repeat;
+
+		@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
+		only screen and (-webkit-min-device-pixel-ration: 2) and (min-width: 37.5em),
+		only screen and (min-width: 125em) {
+			background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/background-2.png');
+		}
 	}
 }

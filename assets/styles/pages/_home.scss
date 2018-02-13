@@ -44,6 +44,12 @@
         @include transparent-word;
         left: 0;
     }
+
+    .picture-box{
+        @include respond(phone){
+            order: 2;
+        }
+    }
 }
 
 .about{
@@ -52,7 +58,7 @@
     &__letter{
         @include transparent-letter;
         top: -49.5rem;
-        right: -26rem;
+        right: -13rem;
 
         @include respond(tab-land){
             right: 0;
@@ -73,6 +79,12 @@
 
         @include respond(phone){
             margin-left: 0;
+        }
+    }
+
+    .picture-box{
+        @include respond(phone){
+            order: 2;
         }
     }
 }

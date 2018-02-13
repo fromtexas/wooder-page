@@ -64,7 +64,7 @@
     }
 
     &__background{
-        background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)),  url('../img/menu-background.jpeg');
+        background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)),  url('../img/menu-background-small.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -74,6 +74,12 @@
         top: -3rem;
         left: -3rem;
         transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
+		only screen and (-webkit-min-device-pixel-ration: 2) and (min-width: 37.5em),
+		only screen and (min-width: 125em) {
+			background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)),  url('../img/menu-background.jpg');
+		}
     }
 
     &__checkbox{

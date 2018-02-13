@@ -8,7 +8,11 @@
 
     @include respond(phone){
         display: none;
-	}
+    }
+    
+    @include respond(tab-port-narrow){
+        display: none;
+    }
 
     &::after{
         content: '';

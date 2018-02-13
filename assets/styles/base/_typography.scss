@@ -21,7 +21,11 @@ body{
 	height: 1px;
 	background-color: currentColor;
 	vertical-align: middle;
-    display: inline-block;
+	display: inline-block;
+	
+	@include respond(big-desktop){
+		height: 2px;
+	}
 
 	&::before{
 		position: absolute;
@@ -108,6 +112,10 @@ body{
     top: 50%;
     left: 10%;
 	transform: translateY(-50%);
+
+	@include respond(tab-port-narrow){
+		display: none;
+	}
 	
 	@include respond(phone){
 		display: none;
@@ -170,6 +178,10 @@ body{
 			left: -15rem;
 		}
 
+		@include respond(tab-port-narrow){
+			display: none;
+		}
+
 		@include respond(phone){
             display: none;
         }
@@ -197,6 +209,10 @@ body{
 		@include respond(tab-port){
 			width: 10rem;
 			right: -15rem;
+		}
+
+		@include respond(tab-port-narrow){
+			display: none;
 		}
 
 		@include respond(phone){
@@ -228,7 +244,11 @@ body{
 
 		@include respond(phone){
             display: none;
-        }
+		}
+		
+		@include respond(tab-port-narrow){
+			display: none;
+		}
 	}
 
 	&__line-right{
@@ -241,7 +261,11 @@ body{
 
 		@include respond(phone){
             display: none;
-        }
+		}
+		
+		@include respond(tab-port-narrow){
+			display: none;
+		}
 	}
 
 	&__line-top{
