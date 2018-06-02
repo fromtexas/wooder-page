@@ -8,8 +8,13 @@
     display: flex;
     margin-top: 20rem;
 
+
     @include resolution{
         background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/design.png');
+    }
+
+    @include respond(laptop){
+        padding: 5rem;
     }
 
     @include respond(tab-port){
