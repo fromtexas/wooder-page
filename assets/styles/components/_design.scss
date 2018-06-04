@@ -4,21 +4,18 @@
     background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/design-small.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 15rem;
+    padding: 5rem;
     display: flex;
     margin-top: 20rem;
+
 
 
     @include resolution{
         background-image: linear-gradient(to right, rgba($color-font-primary, .9), rgba($color-font-primary, .9)), url('../img/design.png');
     }
 
-    @include respond(laptop){
-        padding: 5rem;
-    }
-
-    @include respond(tab-port){
-        padding: 5rem;
+    @include respond(big-desktop){
+        padding: 15rem;
     }
 
     @include respond(phone){
